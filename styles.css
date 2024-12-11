@@ -1,0 +1,46 @@
+.text-area {
+    position: absolute;
+    left: 2rem;
+    top: 0px;
+    height: 1000px;
+    width: 500px;
+    color: transparent;
+    outline: none;
+}
+
+.text-div {
+    position: absolute;
+    left: 2rem;
+    top: 0px;
+    height: 1000px;
+    width: 500px;
+    pointer-events: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.text-div-col {
+    display: flex;
+    padding: 0.2rem;
+    min-height: 1rem;
+    max-width: fit-content;
+    gap: 0.33rem;
+    justify-content: center;
+}
+
+.text-div-col>* {
+    background-color: blue;
+}
+
+.line-numbers {
+    position: absolute;
+    display: flex;
+    max-height: 1rem;
+    flex-direction: column;
+    gap: 0.33rem;
+    width: 2rem;
+}
+
+.line-numbers>* {
+    background-color: red
+}
