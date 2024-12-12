@@ -1,3 +1,8 @@
+:root {
+    font-family: "Fira Code", Consolas, "Courier New", monospace;
+    box-sizing: border-box;
+}
+
 .text-area {
     position: absolute;
     left: 2rem;
@@ -5,7 +10,18 @@
     height: 1000px;
     width: 500px;
     color: transparent;
-    outline: none;
+    font-size: 12px;
+    padding: 0;
+}
+
+.text-area-debug {
+    position: absolute;
+    left: 540px;
+    top: 0px;
+    height: 1000px;
+    width: 500px;
+    font-size: 12px;
+    padding: 0;
 }
 
 .text-div {
@@ -17,30 +33,31 @@
     pointer-events: none;
     display: flex;
     flex-direction: column;
+    font-size: 12px;
 }
 
 .text-div-col {
     display: flex;
-    padding: 0.2rem;
-    min-height: 1rem;
+    max-height: fit-content;
     max-width: fit-content;
-    gap: 0.33rem;
     justify-content: center;
-}
-
-.text-div-col>* {
-    background-color: blue;
+    border: 1px solid black;
+    gap: 0;
 }
 
 .line-numbers {
     position: absolute;
+    top: 0px;
     display: flex;
-    max-height: 1rem;
+    max-height: fit-content;
     flex-direction: column;
-    gap: 0.33rem;
     width: 2rem;
+    gap: 0;
+    font-size: 12px;
 }
 
 .line-numbers>* {
-    background-color: red
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
 }
